@@ -12,7 +12,7 @@ A classifier to select the most suitable preposition for a given context, traine
 * ./features: contains pickle files of instances extracted from preprocessed files
 
 ## Python libraries:
-python 3
+python3
 os
 sys
 time
@@ -22,7 +22,7 @@ nltk
 sklearn
 
 ## Quickstart:
-A quick example to get started. Let us train a classifier from the the text of Moby Dick (./raw/melville-moby_dick).
+A quick example to get started. Let us train a classifier from the the text of Moby Dick (./raw/melville-moby_dick). To train using any other text, just replace the name, eg. whitman-leaves.
 
 On the command line/terminal, go to this directory (./GEC_prep_classifier) and enter the following commands.
 
@@ -39,4 +39,5 @@ The file is written as a pickle file to ./features
 
 ### 3. Train classifier
 > python trainClassifier.py melville-moby_dick
+
 
