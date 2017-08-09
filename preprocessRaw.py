@@ -41,7 +41,7 @@ if __name__ == "__main__":
             line = line.replace('<s>','')
             line = line.replace('</s>','.')
             preproc += ' '.join(token+'_'+tag for token,tag in tagger.tag(word_tokenize(line.lower()))) + ' '
-    print(time.time()-start)
+    print("Time taken:", time.time()-start, "sec")
 
     # Write to file
     with open(OUTPATH,'w') as f:
